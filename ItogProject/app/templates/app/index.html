@@ -1,0 +1,22 @@
+{% extends 'app/layout.html' %}
+
+{% block title %}
+Главная страница
+{% endblock %}
+
+{% block zxc %}
+    <h1 class="zagolovok">Главная страница</h1>
+    <div class="centered-container">
+        <div class="button-container1">
+            <button class="perehod"><i class="fa-solid fa-person"></i>Учитель</button>
+            <button class="perehod"><i class="fa-solid fa-bars"></i>Класс</button>
+            <button class="perehod"><i class="fa-solid fa-child"></i>Ученик</button>
+            <button class="perehod"><i class="fa-solid fa-check"></i>Оценки и посещаемость</button>
+        </div>
+        <div class="button-container2">
+
+            <button class="perehod"><i class="fa-solid fa-calendar-days"></i>Уроки</button>
+            <button class="perehod"><i class="fa-solid fa-clipboard"></i>Отчёты</button>
+        </div>
+    </div>
+{% endblock %}

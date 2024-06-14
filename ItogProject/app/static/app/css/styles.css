@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #2c2c2c;
+    display: flex;
+}
+aside {
+    background: #181818;
+    width: 20%;
+    padding: 2.5%;
+    height: 100vh;
+    color: #fff;
+    border-right: 5px solid #4d4d4d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+img {
+    width: 100px;
+    fill: white;
+}
+.logotip {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logotip:hover {
+    color: #eb5959;
+}
+.logotip:hover .svg {
+    filter: invert(30%) sepia(72%) saturate(7421%) hue-rotate(346deg) brightness(105%) contrast(101%);
+}
+aside .logo {
+    font-size: 40px;
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+aside h3 {
+    margin-top: 60px;
+}
+aside ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    width: 100%;
+}
+aside ul a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #4d4d4d;
+}
+aside ul a:hover {
+    color: #eb5959;
+    background: #333;
+}
+aside ul li {
+    display: flex;
+    align-items: center;
+}
+aside ul li i {
+    margin-right: 10px;
+}
+main {
+    padding: 20px;
+    color: #fff;
+    flex-grow: 1;
+}
+.svg {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+}
+.perehod {
+
+    background-color: #FFD700;
+    color: #000;
+    border: none;
+    width: 300px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+    margin: 10px; /* Adjust vertical margin between buttons */
+    align-items: center; /* Добавлено */
+    height:50px;
+}
+
+.perehod:hover {
+    background-color: #FFC107;
+    color: #000;
+    transform: translateY(-2px);
+}
+
+.perehod:active {
+    background-color: #FFB300;
+    color: #000;
+    transform: translateY(0);
+}
+.centered-container {
+  display: flex; /* Добавлено */
+  flex-direction: column; /* Располагаем элементы вертикально */
+  justify-content: center; /* Центрируем по вертикали */
+  align-items: center; /* Центрируем по горизонтали */
+  height: 80vh; /* Центрируем по всей высоте окна */
+}
+.button-container2{
+    margin-top:60px;
+}
+.zagolovok{
+    text-align:center
+}
