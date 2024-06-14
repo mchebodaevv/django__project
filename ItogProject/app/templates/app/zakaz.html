@@ -1,0 +1,25 @@
+{% extends 'app/layout.html' %}
+
+{% block title %}
+Заказы
+{% endblock %}
+
+{% block zxc %}
+    <h1 class="zagolovok">Заказы</h1>
+    <div class="tablica">
+    <table>
+        <tr>
+            <th>ID заказа</th>
+            <th>Дата заказа</th>
+            <th>ID клиента</th>
+        </tr>
+         {% for el in zakazi %}
+            <tr >
+                <td>{{el.id}}</td>
+                <td>{{el.order_date}}</td>
+                <td>{{el.customer_id}}</td>
+            </tr>
+            {% endfor %}
+    </table>
+    </div>
+{% endblock %}

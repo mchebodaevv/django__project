@@ -1,11 +1,29 @@
 {% extends 'app/layout.html' %}
 
 {% block title %}
-Учитель
+Товары
 {% endblock %}
 
 {% block zxc %}
     <h1 class="zagolovok">Товар</h1>
-    <div class="centered-container">
+    <div class="tablica">
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Имя</th>
+            <th>Описание</th>
+            <th>Количество</th>
+            <th>Категория</th>
+        </tr>
+            {% for el in products %}
+            <tr >
+                <td>{{el.id}}</td>
+                <td>{{el.name}}</td>
+                <td>{{el.description}}</td>
+                <td>{{el.quantity}}</td>
+                <td>{{el.category_id}}</td>
+            </tr>
+            {% endfor %}
+    </table>
     </div>
 {% endblock %}

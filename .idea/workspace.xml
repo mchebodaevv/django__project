@@ -4,16 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6daf226-06f9-41e2-88bc-b9b0cda36980" name="Changes" comment="">
+    <list default="true" id="e6daf226-06f9-41e2-88bc-b9b0cda36980" name="Changes" comment="2">
+      <change afterPath="$PROJECT_DIR$/ItogProject/app/templates/app/zakaz.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ItogProject/ItogProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ItogProject/ItogProject/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ItogProject/app/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/ItogProject/app/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ItogProject/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/ItogProject/app/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ItogProject/app/static/app/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/ItogProject/app/static/app/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ItogProject/app/static/app/img/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ItogProject/app/templates/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ItogProject/app/templates/app/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ItogProject/app/templates/app/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/ItogProject/app/templates/app/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ItogProject/app/templates/app/teacher.html" beforeDir="false" afterPath="$PROJECT_DIR$/ItogProject/app/templates/app/tovar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ItogProject/app/templates/app/tovar.html" beforeDir="false" afterPath="$PROJECT_DIR$/ItogProject/app/templates/app/tovar.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ItogProject/app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ItogProject/app/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ItogProject/app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ItogProject/app/views.py" afterDir="false" />
     </list>
@@ -26,6 +24,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -41,12 +40,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\chebo\Desktop\Project\ItogProject\app\static\app\css" />
@@ -71,6 +71,30 @@
       <option name="presentableId" value="Default" />
       <updated>1718271870445</updated>
     </task>
+    <task id="LOCAL-00001" summary="2">
+      <option name="closed" value="true" />
+      <created>1718385991256</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1718385991256</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="2" />
+    <option name="LAST_COMMIT_MESSAGE" value="2" />
   </component>
 </project>
