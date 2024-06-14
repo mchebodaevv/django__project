@@ -12,15 +12,16 @@
 </head>
 <body>
     <aside>
-        <a href="{% url 'index' %}" class="logotip"><img class="svg" src="{% static 'app/img/logo.svg' %}" alt=""><span class="logo">Школа</span></a>
+        <a href="{% url 'index' %}" class="logotip"><img class="svg" src="{% static 'app/img/logo.png' %}" alt=""><span class="logo">Склад</span></a>
         <h3 >Навигация</h3>
         <ul>
-            <a href="{% url 'teacher' %}"><li><i class="fa-solid fa-person"></i>Учитель</li></a>
-            <a href=""><li><i class="fa-solid fa-bars"></i>Класс</li></a>
-            <a href=""><li><i class="fa-solid fa-child"></i>Ученик</li></a>
-            <a href=""><li><i class="fa-solid fa-check"></i>Оценки и посещаемость</li></a>
-            <a href=""><li><i class="fa-solid fa-calendar-days"></i></i>Уроки</li></a>
-            <a href=""><li><i class="fa-solid fa-clipboard"></i>Отчёты</li></a>
+            <a href="{% url 'tovar' %}"><li><i class="fa-solid fa-bars"></i>Товары</li></a>
+            <a href=""><li><i class="fa-solid fa-file"></i>Заказы</li></a>
+            <a href=""><li><i class="fa-solid fa-child"></i>Поставщики</li></a>
+            <a href="{% url 'category' %}"><li><i class="fa-solid fa-check"></i>Категории товаров</li></a>
+            <a href=""><li><i class="fa-solid fa-child"></i></i>Клиенты</li></a>
+            <a href=""><li><i class="fa-solid fa-clipboard"></i>Детали заказа</li></a>
+            <a href=""><li><i class="fa-solid fa-plus"></i>Поставки</li></a>
         </ul>
     </aside>
     <main>

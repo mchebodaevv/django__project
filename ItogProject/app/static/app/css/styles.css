@@ -77,7 +77,6 @@ main {
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
 }
 .perehod {
-
     background-color: #FFD700;
     color: #000;
     border: none;
@@ -89,32 +88,57 @@ main {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
-    margin: 10px; /* Adjust vertical margin between buttons */
-    align-items: center; /* Добавлено */
-    height:50px;
+    margin: 10px;
+    align-items: center;
+    height: 50px;
 }
-
 .perehod:hover {
     background-color: #FFC107;
     color: #000;
     transform: translateY(-2px);
 }
-
 .perehod:active {
     background-color: #FFB300;
     color: #000;
     transform: translateY(0);
 }
 .centered-container {
-  display: flex; /* Добавлено */
-  flex-direction: column; /* Располагаем элементы вертикально */
-  justify-content: center; /* Центрируем по вертикали */
-  align-items: center; /* Центрируем по горизонтали */
-  height: 80vh; /* Центрируем по всей высоте окна */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
 }
-.button-container2{
-    margin-top:60px;
+.button-container2 {
+    margin-top: 60px;
 }
-.zagolovok{
-    text-align:center
+.zagolovok {
+    text-align: center;
 }
+.tablica {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+/* Добавляем стили для таблицы */
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: -40px 0;
+    font-size: 18px;
+    text-align: center;
+}
+table th, table td {
+    padding: 12px 15px;
+    border: 1px solid black;
+}
+table th {
+    background-color: #a18d28;
+    color: #green;
+}
+table tr {
+    background-color: #fcd703;
+    color: black;
+}
+
