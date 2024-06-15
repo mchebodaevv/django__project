@@ -118,27 +118,76 @@ main {
 .tablica {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start; /* Align items to the start to grow downward */
     height: 60vh;
+    margin-top:4%;
+
 }
-/* Добавляем стили для таблицы */
 table {
-    width: 50%;
+    width: 100%;
     border-collapse: collapse;
-    margin: -40px 0;
-    font-size: 18px;
     text-align: center;
 }
+
 table th, table td {
     padding: 12px 15px;
     border: 1px solid black;
 }
+
 table th {
     background-color: #a18d28;
-    color: #green;
+    color: black;
 }
+
 table tr {
     background-color: #fcd703;
     color: black;
 }
+input[type=text] {
+            width:250px;
+            margin-top:5px;
+            padding:10px;
+            border:0;
+            box-shadow:0 0 0px 1px rgba(0,0,0,1);
+            padding:10px;
+            border-radius:10px;
+        }
+        input[type=number] {
+            padding:10px;
+            border:0;
+            box-shadow:0 0 0px 1px rgba(0,0,0,1);
+            padding:10px;
+            border-radius:10px;
+        }
+        p {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+.izmenenia{
+    margin-top:5%;
+    text-align:center;
+}
+.btn-iz{
 
+    background-color: #17bf44;
+    color: #000;
+    border: none;
+    width: 250px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+    margin-top: 35px;
+    align-items: center;
+    height: 50px;
+}
+.btn-izm{
+    text-decoration:none;
+    color:black;
+}
+.btn-izm:hover{
+    color:#7a7171;
+}

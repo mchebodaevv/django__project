@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6daf226-06f9-41e2-88bc-b9b0cda36980" name="Changes" comment="2">
-      <change afterPath="$PROJECT_DIR$/ItogProject/app/templates/app/zakaz.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ItogProject/app/templates/app/category_create.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ItogProject/ItogProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ItogProject/ItogProject/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ItogProject/app/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/ItogProject/app/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ItogProject/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/ItogProject/app/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ItogProject/app/templates/app/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/ItogProject/app/templates/app/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ItogProject/app/templates/app/tovar.html" beforeDir="false" afterPath="$PROJECT_DIR$/ItogProject/app/templates/app/tovar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ItogProject/app/static/app/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/ItogProject/app/static/app/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ItogProject/app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ItogProject/app/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ItogProject/app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ItogProject/app/views.py" afterDir="false" />
     </list>
@@ -44,10 +41,15 @@
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/chebo/Desktop/Project/ItogProject/app/templates/app"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\chebo\Desktop\Project\ItogProject\app\templates\app" />
+      <recent name="C:\Users\chebo\Desktop\Project\ItogProject\app\templates" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\chebo\Desktop\Project\ItogProject\app\static\app\css" />
       <recent name="C:\Users\chebo\Desktop\Project\ItogProject\app\static" />

@@ -2,13 +2,14 @@ from django.db import models
 
 
 class ProductCategory(models.Model):
-    category_name = models.CharField(max_length=100,unique=True, verbose_name='Категория', primary_key=True)
+    category_name = models.CharField(max_length=100, verbose_name='Категория', )
     def __str__(self):
         return self.category_name
     class Meta:
         verbose_name = 'Категория'
         verbose_name_plural = 'Категории'
-
+    def get_absolute_url(self):
+        return f'/category'
 class Product(models.Model):
     name = models.CharField(max_length=100,verbose_name='Имя')
     description = models.TextField(verbose_name='Описание')
