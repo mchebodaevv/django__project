@@ -1,0 +1,29 @@
+{% extends 'app/layout.html' %}
+
+{% block title %}
+Главная страница
+{% endblock %}
+
+{% block zxc %}
+    <h1 class="zagolovok">Категории товаров</h1>
+    <a href="{% url 'category_create' %}"><button class="perehod">Создать запись</button></a>
+    <div class="tablica">
+        <table>
+        <tr>
+            <th>ID</th>
+            <th>Категория</th>
+            <th>Действия</th>
+        </tr>
+            {% for el in categories %}
+            <tr>
+                <td>{{ el.id }}</td>
+                <td>{{ el.category_name }}</td>
+                <td>
+                    <a href="{% url 'category_edit' el.id %} " class="btn-izm"><i class="fa-solid fa-pen-to-square"></i></a><br>
+                    <a href="{% url 'category_delete' el.id %} " class="btn-izm"><i class="fa-solid fa-trash"></i></a>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% endblock %}

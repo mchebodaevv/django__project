@@ -1,0 +1,15 @@
+{% extends 'app/layout.html' %}
+
+{% block title %}
+Добавление категории
+{% endblock %}
+
+{% block zxc %}
+    <h1 class="zagolovok">Удаление</h1>
+    <div class="izmenenia">
+
+            <form method="post">
+                {% csrf_token  %}
+            </form>
+    </div>
+{% endblock %}

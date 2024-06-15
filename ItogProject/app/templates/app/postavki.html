@@ -1,0 +1,29 @@
+{% extends 'app/layout.html' %}
+
+{% block title %}
+Поставки
+{% endblock %}
+
+{% block zxc %}
+    <h1 class="zagolovok">Поставки</h1>
+    <div class="tablica">
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>ID поставщика</th>
+            <th>ID товара</th>
+            <th>Количество</th>
+            <th>Дата поставки</th>
+        </tr>
+         {% for el in postavki %}
+            <tr >
+                <td>{{el.id}}</td>
+                <td>{{el.supplier_id}}</td>
+                <td>{{el.product_id}}</td>
+                <td>{{el.quantity}}</td>
+                <td>{{el.shipment_date}}</td>
+            </tr>
+            {% endfor %}
+    </table>
+    </div>
+{% endblock %}

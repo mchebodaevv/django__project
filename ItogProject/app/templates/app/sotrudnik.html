@@ -1,0 +1,29 @@
+{% extends 'app/layout.html' %}
+
+{% block title %}
+Сотрудники
+{% endblock %}
+
+{% block zxc %}
+    <h1 class="zagolovok">Сотрудник</h1>
+    <div class="tablica">
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Имя</th>
+            <th>Электронная почта</th>
+            <th>Телефон</th>
+            <th>Должность</th>
+        </tr>
+         {% for el in sotrudniki %}
+            <tr >
+                <td>{{el.id}}</td>
+                <td>{{el.name}}</td>
+                <td>{{el.email}}</td>
+                <td>{{el.phone}}</td>
+                <td>{{el.position}}</td>
+            </tr>
+            {% endfor %}
+    </table>
+    </div>
+{% endblock %}
