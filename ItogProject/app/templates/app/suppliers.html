@@ -5,7 +5,8 @@
 {% endblock %}
 
 {% block zxc %}
-    <h1 class="zagolovok">Детали заказа</h1>
+    <h1 class="zagolovok">Поставщики</h1>
+    <a href="{% url 'suppliers_create' %}"><button class="perehod">Создать запись</button></a>
     <div class="tablica">
     <table>
         <tr>
@@ -13,6 +14,7 @@
             <th>Название</th>
             <th>Контактная информация</th>
             <th>Адрес</th>
+            <th>Действие</th>
         </tr>
          {% for el in suppliers %}
             <tr >
@@ -20,6 +22,8 @@
                 <td>{{el.name}}</td>
                 <td>{{el.contact_info}}</td>
                 <td>{{el.address}}</td>
+                <td><a href="{% url 'suppliers_edit' el.id %} " class="btn-izm"><i class="fa-solid fa-pen-to-square"></i></a><br>
+                    <a href="{% url 'suppliers_delete' el.id %} " class="btn-izm"><i class="fa-solid fa-trash"></i></a></td>
             </tr>
             {% endfor %}
     </table>

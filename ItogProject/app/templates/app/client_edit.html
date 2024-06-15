@@ -1,0 +1,24 @@
+{% extends 'app/layout.html' %}
+
+{% block title %}
+Добавление категории
+{% endblock %}
+
+{% block zxc %}
+    <h1 class="zagolovok">Редактирование клиента</h1>
+    <div class="izmenenia">
+
+            <form method="post">
+                {% csrf_token %}
+                <p style="font-width:bold">Имя клиента</p> <br>
+                {{ form.name }}<br>
+                <p style="font-width:bold">Электронная почта</p> <br>
+                {{ form.email }}<br>
+                <p style="font-width:bold">Телефон</p> <br>
+                {{ form.phone }}<br>
+                <p style="font-width:bold">Адрес</p> <br>
+                {{ form.address }}<br>
+                <button type="submit" class="btn-iz">Редактировать клиента</button>
+            </form>
+    </div>
+{% endblock %}

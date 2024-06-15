@@ -6,6 +6,7 @@
 
 {% block zxc %}
     <h1 class="zagolovok">Поставки</h1>
+    <a href="{% url 'postavki_create' %}"><button class="perehod">Создать запись</button></a>
     <div class="tablica">
     <table>
         <tr>
@@ -14,6 +15,7 @@
             <th>ID товара</th>
             <th>Количество</th>
             <th>Дата поставки</th>
+            <th>Действие</th>
         </tr>
          {% for el in postavki %}
             <tr >
@@ -22,6 +24,8 @@
                 <td>{{el.product_id}}</td>
                 <td>{{el.quantity}}</td>
                 <td>{{el.shipment_date}}</td>
+                <td><a href="{% url 'postavki_edit' el.id %} " class="btn-izm"><i class="fa-solid fa-pen-to-square"></i></a><br>
+                <a href="{% url 'postavki_delete' el.id %} " class="btn-izm"><i class="fa-solid fa-trash"></i></a><br>
             </tr>
             {% endfor %}
     </table>

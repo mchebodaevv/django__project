@@ -1,0 +1,17 @@
+{% extends 'app/layout.html' %}
+
+{% block title %}
+Добавление категории
+{% endblock %}
+
+{% block zxc %}
+    <h1 class="zagolovok">Удаление поставщика</h1>
+    <div class="izmenenia">
+            <form method="post">
+                {% csrf_token %}
+                <h2>Вы действительно хотите удалить {{ object.name }}?</h2>
+                <button type="submit" class="btn-iz" style="background:red">Удалить</button>
+            </form>
+                <a href="{% url 'category' %}"><button class="btn-iz" >Не удалять</button></a>
+    </div>
+{% endblock %}

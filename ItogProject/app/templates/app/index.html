@@ -8,34 +8,15 @@
     <h1 class="zagolovok">Главная страница</h1>
     <div class="centered-container">
         <div class="button-container1">
-            <button class="perehod"><i class="fa-solid fa-bars"></i>Товары</button>
-            <button class="perehod"><i class="fa-solid fa-file"></i>Заказы</button>
-            <button class="perehod"><i class="fa-solid fa-child"></i>Поставщики</button>
-            <button class="perehod"><i class="fa-solid fa-check"></i>Категории товаров</button>
+            <a href="{% url 'tovar' %}"><button class="perehod"><i class="fa-solid fa-bars"></i>Товары</button></a>
+            <a href="{% url 'zakazi' %}"><button class="perehod"><i class="fa-solid fa-file"></i>Заказы</button></a>
+            <a href="{% url 'postavki' %}"><button class="perehod"><i class="fa-solid fa-plus"></i>Поставки</button></a>
+            <a href="{% url 'category' %}"><button class="perehod"><i class="fa-solid fa-check"></i>Категории товаров</button></a>
         </div>
         <div class="button-container2">
-            <button class="perehod"><i class="fa-solid fa-child"></i></i>Клиенты</button>
-            <button class="perehod"><i class="fa-solid fa-clipboard"></i>Детали заказа</button>
-            <button class="perehod"><i class="fa-solid fa-plus"></i>Поставки</button>
+            <a href="{% url 'client' %}"><button class="perehod"><i class="fa-solid fa-child"></i></i>Клиенты</button></a>
+            <a href="{% url 'suppliers' %}"><button class="perehod"><i class="fa-solid fa-child"></i>Поставщики</button></a>
+            <a href="{% url 'sotrudniki' %}"><button class="perehod"><i class="fa-solid fa-child"></i>Сотрудники</button></a>
         </div>
-    </div>
-    <div class="tablica">
-        <table>
-          <tr>
-            <th>Company</th>
-            <th>Contact</th>
-            <th>Country</th>
-          </tr>
-          <tr>
-            <td>Alfreds Futterkiste</td>
-            <td>Maria Anders</td>
-            <td>Germany</td>
-          </tr>
-          <tr>
-            <td>Centro comercial Moctezuma</td>
-            <td>Francisco Chang</td>
-            <td>Mexico</td>
-          </tr>
-        </table>
     </div>
 {% endblock %}

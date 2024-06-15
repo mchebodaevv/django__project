@@ -6,18 +6,26 @@
 
 {% block zxc %}
     <h1 class="zagolovok">Заказы</h1>
+    <a href="{% url 'zakaz_create' %}"><button class="perehod">Создать запись</button></a>
     <div class="tablica">
     <table>
         <tr>
             <th>ID заказа</th>
             <th>Дата заказа</th>
             <th>ID клиента</th>
+            <th>ID товара</th>
+            <th>Количество</th>
+            <th>Действие</th>
         </tr>
          {% for el in zakazi %}
             <tr >
                 <td>{{el.id}}</td>
                 <td>{{el.order_date}}</td>
                 <td>{{el.customer_id}}</td>
+                <td>{{el.product_id}}</td>
+                <td>{{el.quantity}}</td>
+                <td><a href="{% url 'zakaz_edit' el.id %} " class="btn-izm"><i class="fa-solid fa-pen-to-square"></i></a><br>
+                    <a href="{% url 'zakaz_delete' el.id %} " class="btn-izm"><i class="fa-solid fa-trash"></i></a></td>
             </tr>
             {% endfor %}
     </table>

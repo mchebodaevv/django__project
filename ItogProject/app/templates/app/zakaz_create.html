@@ -1,0 +1,28 @@
+{% extends 'app/layout.html' %}
+
+{% block title %}
+Добавление заказа
+{% endblock %}
+
+{% block zxc %}
+    <h1 class="zagolovok">Добавление заказа</h1>
+    <div class="izmenenia">
+        {% if error %}
+            <div class="error-message" style="color: red;">
+                {{ error }}
+            </div>
+        {% endif %}
+        <form method="post">
+            {% csrf_token %}
+            <p style="font-weight:bold">Дата заказа</p> <br>
+            {{ form.order_date }}<br>
+            <p style="font-weight:bold">Клиент</p> <br>
+            {{ form.customer }}<br>
+            <p style="font-weight:bold">Товар</p> <br>
+            {{ form.product }}<br>
+            <p style="font-weight:bold">Количество</p> <br>
+            {{ form.quantity }}<br>
+            <button type="submit" class="btn-iz">Добавить заказ</button>
+        </form>
+    </div>
+{% endblock %}

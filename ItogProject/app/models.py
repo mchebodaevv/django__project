@@ -21,6 +21,8 @@ class Product(models.Model):
     class Meta:
         verbose_name = 'Товар'
         verbose_name_plural = 'Товары'
+    def get_absolute_url(self):
+        return f'/tovar'
 
 class Customer(models.Model):
     name = models.CharField(max_length=100,verbose_name='Имя')
@@ -33,28 +35,22 @@ class Customer(models.Model):
     class Meta:
         verbose_name = 'Клиент'
         verbose_name_plural = 'Клиенты'
-
+    def get_absolute_url(self):
+        return f'/client'
 
 class Order(models.Model):
 
     order_date = models.DateField(verbose_name='Дата заказа')
     customer = models.ForeignKey(Customer, on_delete=models.CASCADE,verbose_name='ID клиента')
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, verbose_name='Номер товара')
+    quantity = models.IntegerField(verbose_name='Количество')
     def __str__(self):
         return f'Order {self.id}'
     class Meta:
         verbose_name = 'Заказ'
         verbose_name_plural = 'Заказы'
-
-class OrderDetail(models.Model):
-    order = models.ForeignKey(Order, on_delete=models.CASCADE,verbose_name='Номер заказа')
-    product = models.ForeignKey(Product, on_delete=models.CASCADE,verbose_name='Номер товара')
-    quantity = models.IntegerField(verbose_name='Количество')
-
-    def __str__(self):
-        return f'Detail {self.id} of Order {self.order.id}'
-    class Meta:
-        verbose_name = 'Детали заказа'
-        verbose_name_plural = 'Детели заказа'
+    def get_absolute_url(self):
+        return f'/zakazi'
 
 class Supplier(models.Model):
     name = models.CharField(max_length=100,verbose_name='Имя поставщика')
@@ -66,7 +62,8 @@ class Supplier(models.Model):
     class Meta:
         verbose_name = 'Поставщик'
         verbose_name_plural = 'Поставщики'
-
+    def get_absolute_url(self):
+        return f'/suppliers'
 class Shipment(models.Model):
     supplier = models.ForeignKey(Supplier, on_delete=models.CASCADE,verbose_name='Номер поставщика')
     product = models.ForeignKey(Product, on_delete=models.CASCADE,verbose_name='Номер товара')
@@ -79,6 +76,8 @@ class Shipment(models.Model):
     class Meta:
         verbose_name = 'Поставка'
         verbose_name_plural = 'Поставки'
+    def get_absolute_url(self):
+        return f'/postavki'
 
 class Employee(models.Model):
     name = models.CharField(max_length=100,verbose_name='Имя сотрудника')
@@ -91,3 +90,5 @@ class Employee(models.Model):
     class Meta:
         verbose_name = 'Сотрудник'
         verbose_name_plural = 'Сотрудники'
+    def get_absolute_url(self):
+        return f'/sotrudniki'

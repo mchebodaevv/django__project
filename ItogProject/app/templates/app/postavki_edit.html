@@ -1,0 +1,24 @@
+{% extends 'app/layout.html' %}
+
+{% block title %}
+Добавление категории
+{% endblock %}
+
+{% block zxc %}
+    <h1 class="zagolovok">Редактирование поставки</h1>
+    <div class="izmenenia">
+
+            <form method="post">
+                {% csrf_token %}
+                <p style="font-width:bold">Поставщик</p> <br>
+                {{ form.supplier }}<br>
+                <p style="font-width:bold">Товар</p> <br>
+                {{ form.product }}<br>
+                <p style="font-width:bold">Дата поставки</p> <br>
+                {{ form.shipment_date }}<br>
+                <p style="font-width:bold">Количество</p> <br>
+                {{ form.quantity }}<br>
+                <button type="submit" class="btn-iz">Редактировать поставку</button>
+            </form>
+    </div>
+{% endblock %}
